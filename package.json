@@ -1,0 +1,14 @@
+{
+  "name": "magic-mobile-tw",
+  "version": "1.0.0",
+  "description": "Magic mobile original site",
+  "main": "index.js",
+  "scripts": {
+    "key": "npx tailwindcss -i ./styles/tw.css -o ./styles/main.css --watch"
+  },
+  "author": "xabibulloh",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  }
+}
