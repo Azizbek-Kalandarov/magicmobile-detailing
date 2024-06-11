@@ -685,6 +685,8 @@ class="flex justify-between items-center p-4 lg:p-6 list-none after:shrink-0 aft
           class="block w-[100%] mb-[13px] py-[10px] pl-[15px] border-[0.8px] border-solid border-[#EAEAEA] rounded-[5px] bg-[#FAFAFA] placeholder:text-[#CFC8C8]"
           name="user_name"
           placeholder="Enter your full name"
+          minlength="4"
+          maxlength="20"
           required>
           <label class="block mb-[8px] text-[17px]" for="phonenumber">Your phone number *</label>
           <input
@@ -692,6 +694,9 @@ class="flex justify-between items-center p-4 lg:p-6 list-none after:shrink-0 aft
           id="phonenumber"
           class="block w-[100%] mb-[13px] py-[10px] pl-[15px] border-[0.8px] border-solid border-[#EAEAEA] rounded-[5px] bg-[#FAFAFA] placeholder:text-[#CFC8C8]"
           name="user_phone_number"
+          pattern="\(\d{3}\)[ ]?\d{3}[-]?\d{4}"
+          minlength="10"
+          maxlength="12"
           placeholder="Enter your phone number"
           required>
           <label class="block mb-[8px] text-[17px]" for="email">Your email</label>
@@ -700,11 +705,11 @@ class="flex justify-between items-center p-4 lg:p-6 list-none after:shrink-0 aft
           id="email"
           class="block w-[100%] mb-[13px] py-[10px] pl-[15px] border-[0.8px] border-solid border-[#EAEAEA] rounded-[5px] bg-[#FAFAFA] placeholder:text-[#CFC8C8]"
           name="user_email"
+          pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
           placeholder="Enter your email address"
           required>
           <label class="block mb-[8px] text-[17px]" for="selectservice">Please select service *</label>
           <select name="user_select_service" id="selectservice" class="block w-[100%] mb-[10px] py-[10px] pl-[15px] border-[0.8px] border-solid border-[#EAEAEA] rounded-[5px] bg-[#FAFAFA]" required>
-            <option class="text-[#CFC8C8] select-option" hidden selected>Select option</option>
             <option value="diamond_detailing">Diamond Detailing</option>
             <option value="full_interior_detailing">Full Interior Detailing</option>
             <option value="full_exterior-detailing">Full Exterior Detailing</option>
